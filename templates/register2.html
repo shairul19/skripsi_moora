@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Registrasi</title>
+</head>
+<body>
+    <h1>Registrasi</h1>
+    <form method="POST" action="/register2">
+        
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="nama_lengkap">Nama Lengkap:</label>
+        <input type="text" id="nama_lengkap" name="nama_lengkap" required><br><br>
+        
+        <label for="tanggal_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir" required><br><br>
+        
+        <label for="posisi">Posisi Pemain:</label>
+        <select id="posisi" name="posisi" required>
+            <option value="Goal Keeper">GK</option>
+            <option value="Defender">DF</option>
+            <option value="Midfielder">MF</option>
+            <option value="Forward">FW</option>
+        </select><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

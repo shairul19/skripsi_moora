@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Registrasi</title>
+</head>
+<body>
+    <h1>Registrasi</h1>
+    <form method="POST" action="/register">
+        <label for="nisn">NISN:</label>
+        <input type="text" id="nisn" name="nisn" required><br><br>
+        
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="nama_pemain">Nama Pemain:</label>
+        <input type="text" id="nama_pemain" name="nama_pemain" required><br><br>
+        
+        <label for="tgl_lahir_pemain">Tanggal Lahir:</label>
+        <input type="date" id="tgl_lahir_pemain" name="tgl_lahir_pemain" required><br><br>
+        
+        <label for="posisi_pemain">Posisi Pemain:</label>
+        <select id="posisi_pemain" name="posisi_pemain" required>
+            <option value="GK">GK</option>
+            <option value="DF">DF</option>
+            <option value="MF">MF</option>
+            <option value="FW">FW</option>
+        </select><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
