@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lihat Peserta</title>
+</head>
+<body>
+    <h1>Lihat Peserta</h1>
+    <form method="POST" action="/lihat_peserta">
+        <label for="posisi">Posisi:</label>
+        <select id="posisi" name="posisi">
+            <option value="all">Semua</option>
+            <option value="GK">GK</option>
+            <option value="DF">DF</option>
+            <option value="MF">MF</option>
+            <option value="FW">FW</option>
+        </select>
+        <button type="submit">Tampilkan</button>
+    </form>
+
+    <br>
+
+    <h2>Daftar Peserta</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID User</th>
+                <th>Username</th>
+                <th>Nama Lengkap</th>
+                <th>Tanggal Lahir</th>
+                <th>Posisi</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for peserta in peserta %}
+            <tr>
+                <td>{{ peserta[0] }}</td>
+                <td>{{ peserta[1] }}</td>
+                <td>{{ peserta[2] }}</td>
+                <td>{{ peserta[3] }}</td>
+                <td>{{ peserta[4] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    {% if 'username' in session %}
+        <p>Selamat datang, {{ session['username'] }}!</p>
+        <a href="/logout">Logout</a>
+    {% else %}
+        <p>Anda belum login. Silakan <a href="/login">login</a> terlebih dahulu.</p>
+    {% endif %}
+</body>
+</html>
